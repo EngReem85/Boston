@@ -247,7 +247,7 @@ print(f"💰 Predicted Price: ${price:,.2f}")
 | **Live Application** | [Hugging Face Space](https://huggingface.co/spaces/EngReem85/cpu-price-predictor) |
 | **GitHub Repository** | [GitHub Repository](https://github.com/EngReem85/CPU-Advisor-Predictor) |
 | **Original Dataset** | [Kaggle](https://www.kaggle.com/datasets/lincolnzh/cpu-specifications-dataset) |
-| **Power BI Dashboard** | [Download .pbix](رابط-اللوحة) |
+| **Power BI Dashboard** | [Download .pbix](https://github.com/EngReem85/CPU-Advisor-Predictor/raw/refs/heads/main/powerbi_dashboard/CPU.pbix) |
 
 ---
 
