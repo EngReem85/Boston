@@ -1,4 +1,4 @@
-# CPU Advisor — Performance Prediction & Analytics
+# CPU Advisor — Price Prediction & Analytics
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-1.7.6-orange.svg)](https://xgboost.readthedocs.io/)
@@ -10,31 +10,31 @@
 
 ## Overview
 
-**CPU Advisor** is an end-to-end machine learning platform that predicts CPU performance rankings based on technical specifications. It combines:
+**CPU Advisor** is an end-to-end machine learning platform that **estimates CPU prices** based on technical specifications. It combines:
 
--  **Machine Learning Model** (XGBoost) with R² ~ 0.95
+-  **Machine Learning Model** (XGBoost) with R² = 0.9573
 -  **Interactive Web Application** (Gradio) hosted on Hugging Face Spaces
 -  **Power BI Dashboard** for interactive data visualization
-- **Automated Data Pipeline** for cleaning and feature engineering
+-  **Automated Data Pipeline** for cleaning and feature engineering
 
-The project helps consumers, researchers, and tech enthusiasts make informed decisions when comparing processors.
+⚠️ **Important Note:** The price predictions are based on historical data and may not reflect current market values. This tool is designed for **educational and research purposes** to understand the relationship between CPU specifications and pricing.
 
 ---
 
-##  The Challenge
+## The Challenge
 
 With thousands of CPU models in the market, users face challenges in:
 
-- Understanding true performance differences between processors
+- Understanding the relationship between specifications and pricing
 - Making informed purchasing decisions
 - Comparing CPUs across different brands and generations
 - Estimating the value of used processors
 
-**Our Solution:** A machine learning-powered platform that predicts performance rankings and provides deep analytical insights.
+**Our Solution:** A machine learning-powered platform that estimates CPU prices and provides deep analytical insights.
 
 ---
 
-##  Technologies Used
+## Technologies Used
 
 | Domain | Tools |
 |--------|-------|
@@ -49,7 +49,7 @@ With thousands of CPU models in the market, users face challenges in:
 
 ---
 
-##  Dataset Overview
+## Dataset Overview
 
 | Feature | Value |
 |---------|-------|
@@ -57,7 +57,7 @@ With thousands of CPU models in the market, users face challenges in:
 | **Original Columns** | 13 |
 | **Engineered Columns** | 11 |
 | **Total Columns** | 24 |
-| **Target Variable** | Performance `rank` (0 = Best) |
+| **Target Variable** | Price (USD) |
 | **Features Used** | 14 (TDP, cores, clock speed, brand, category, socket, etc.) |
 
 ### Top Brands
@@ -78,24 +78,24 @@ With thousands of CPU models in the market, users face challenges in:
 
 ---
 
-##  Features
+## Features
 
-### 1.  Machine Learning Model
+### 1. Machine Learning Model
 - **Algorithm:** XGBoost
-- **Target:** Performance Ranking (0 = Best)
-- **R² Score:** ~0.95
+- **Target:** Price (USD)
+- **R² Score:** 0.9573
 - **Key Features:** TDP, core count, clock speed, brand, category, socket
 
-### 2.  Web Application
+### 2. Web Application
 - **Framework:** Gradio
 - **Bilingual:** English & Arabic interface
-- **Instant Predictions:** Get performance rankings in seconds
+- **Instant Predictions:** Get price estimates in seconds
 - **Pre-loaded Examples:** Quick testing with real CPU data
 
 ### 3. Power BI Dashboard
 - **Interactive Visualizations:** Bar charts, scatter plots, heatmaps
 - **Filters:** Filter by brand, category, TDP, release year
-- **Trend Analysis:** CPU performance evolution over time
+- **Trend Analysis:** CPU pricing trends over time
 - **Brand Comparison:** Compare Intel vs AMD vs ARM
 
 ### 4. Data Pipeline
@@ -108,7 +108,7 @@ With thousands of CPU models in the market, users face challenges in:
 ## 📂 Project Structure
 
 ```
-cpu-price-predictor/
+CPU-Advisor-Predictor/
 │
 ├── README.md                      # Project documentation
 ├── LICENSE                        # MIT License
@@ -117,10 +117,10 @@ cpu-price-predictor/
 │
 ├── data/                          # Data files
 │   ├── raw_data.csv               # Original dataset (Kaggle)
-│   └── Final_CPU_Data_Cleaned.csv           # Processed dataset (24 columns)
+│   └── Final_CPU_Data_Cleaned.csv # Processed dataset (24 columns)
 │
 ├── notebooks/                     # Jupyter notebooks
-│   ├── CPU_data_cleaner.ipynb             # Data cleaning script
+│   ├── CPU_data_cleaner.ipynb     # Data cleaning script
 │   └── cpu_eda_training.ipynb     # EDA, cleaning, model training
 │
 ├── src/                           # Source code
@@ -143,7 +143,7 @@ cpu-price-predictor/
 
 ---
 
-##  Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -154,7 +154,7 @@ cpu-price-predictor/
 
 ```bash
 git clone https://github.com/EngReem85/CPU-Advisor-Predictor.git
-cd cpu-price-predictor
+cd CPU-Advisor-Predictor
 ```
 
 ### Step 2: Create a Virtual Environment
@@ -173,8 +173,7 @@ pip install -r requirements.txt
 ### Step 4: Download the Dataset
 
 1. Download the original dataset from [Kaggle](https://www.kaggle.com/datasets/reem85/cpu-specs-dataset-for-ml)
-2. Place it in `data/Final_CPU_Data_Cleaned.csv`
-
+2. Place it in `data/raw_data.csv`
 
 ### Step 5: Train the Model (Optional)
 
@@ -190,17 +189,17 @@ Open `http://localhost:7860` in your browser.
 
 ---
 
-##  How to Use
+## How to Use
 
 ### Via Web Application
 1. Enter CPU specifications (TDP, cores, clock speed, brand, category, socket)
 2. Click **Predict**
-3. Get the predicted performance ranking instantly
+3. Get the estimated price instantly
 
 ### Via Power BI Dashboard
 1. Open `powerbi_dashboard/cpu_dashboard.pbix`
 2. Use interactive filters to explore data
-3. Analyze performance trends and comparisons
+3. Analyze pricing trends and comparisons
 
 ### Via Python Code
 
@@ -215,16 +214,17 @@ features = [65, 6, 12, 1, 1000, 50, 2.5, 2.4, 4.0, 0.5, 15.0, 1, 0, 0]
 
 # Predict
 price = predict_price(features, model)
-print(f"💰 Predicted Price: ${price:,.2f}")
+print(f"💰 Estimated Price: ${price:,.2f}")
 ```
 
 ---
 
-##  Model Performance
+## Model Performance
 
 | Metric | Value |
 |--------|-------|
 | **Algorithm** | XGBoost |
+| **Target Variable** | Price (USD) |
 | **R² Score** | 0.9573 |
 | **RMSE** | $408.77 |
 | **MAE** | $100.42 |
@@ -251,7 +251,7 @@ print(f"💰 Predicted Price: ${price:,.2f}")
 
 ---
 
-##  Contributing
+## Contributing
 
 Contributions are welcome! Here's how you can help:
 
@@ -263,18 +263,18 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-##  License
+## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-##  Author
+## Author
 
 **Reem Algethami**
 
-- GitHub: [GitHub](https://github.com/EngReem85)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/reem-algethami-245800316)
+- GitHub: [EngReem85](https://github.com/EngReem85)
+- LinkedIn: [Reem Algethami](https://linkedin.com/in/reem-algethami-245800316)
 - Email: reem525979@gmail.com
 
 ---
@@ -289,18 +289,9 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ---
 
-##  Acknowledgments
+##  Sample Dashboard Screenshot
 
-- **LincolnZh** for the original CPU dataset on Kaggle
-- **Open Source Community** for the amazing tools and libraries
-
----
-
-## 📊 Sample Dashboard Screenshot
-
-
-![Power BI Dashboard]([CPU Dashboard_screenshot.png](https://raw.githubusercontent.com/EngReem85/CPU-Advisor-Predictor/main/CPU%20Dashboard.jpg))
-
+![Power BI Dashboard](https://raw.githubusercontent.com/EngReem85/CPU-Advisor-Predictor/main/CPU%20Dashboard.jpg)
 
 ---
 
@@ -326,3 +317,4 @@ If you found this project useful, please give it a ⭐ on GitHub!
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/topics/huggingface)
 [![Data Visualization](https://img.shields.io/badge/Data_Visualization-6A1B9A?style=for-the-badge&logo=databricks&logoColor=white)](https://github.com/topics/data-visualization)
 [![Predictive Analytics](https://img.shields.io/badge/Predictive_Analytics-FF5722?style=for-the-badge&logo=apachespark&logoColor=white)](https://github.com/topics/predictive-analytics)
+
