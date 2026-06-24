@@ -153,7 +153,7 @@ cpu-price-predictor/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/cpu-price-predictor.git
+git clone https://github.com/EngReem85/CPU-Advisor-Predictor.git
 cd cpu-price-predictor
 ```
 
@@ -274,7 +274,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 **Reem Algethami**
 
 - GitHub: [GitHub](https://github.com/EngReem85)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/www.linkedin.com/in/reem-algethami-245800316)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/reem-algethami-245800316)
 - Email: reem525979@gmail.com
 
 ---
@@ -299,7 +299,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## 📊 Sample Dashboard Screenshot
 
 
-![Power BI Dashboard]([CPU Dashboard_screenshot.png](https://github.com/EngReem85/CPU-Advisor-Predictor/blob/main/CPU%20Dashboard.jpg))
+![Power BI Dashboard]([CPU Dashboard_screenshot.png](https://raw.githubusercontent.com/EngReem85/CPU-Advisor-Predictor/main/CPU%20Dashboard.jpg))
 
 
 ---
