@@ -4,7 +4,7 @@
 [![XGBoost](https://img.shields.io/badge/XGBoost-1.7.6-orange.svg)](https://xgboost.readthedocs.io/)
 [![Gradio](https://img.shields.io/badge/Gradio-4.12.0-green.svg)](https://gradio.app/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Spaces-ff69b4.svg)](رابط-التطبيق)
+[![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Spaces-ff69b4.svg)](https://huggingface.co/spaces/EngReem85/cpu-price-predictor)
 
 ---
 
@@ -299,7 +299,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## 📊 Sample Dashboard Screenshot
 
 
-![Power BI Dashboard](./CPU Dashboard.jpg)
+![Power BI Dashboard]([./CPU Dashboard_screenshot.png](https://github.com/EngReem85/CPU-Advisor-Predictor/CPU Dashboard.jpg))
 
 
 ---
