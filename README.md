@@ -314,4 +314,15 @@ If you found this project useful, please give it a ⭐ on GitHub!
 
 ---
 
-**Tags:** Machine Learning · Data Science · CPU · Power BI · Python · XGBoost · Gradio · Hugging Face · Data Visualization · Predictive Analytics
+## Tags
+
+[![Machine Learning](https://img.shields.io/badge/Machine_Learning-FF6F00?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://github.com/topics/machine-learning)
+[![Data Science](https://img.shields.io/badge/Data_Science-4CAF50?style=for-the-badge&logo=databricks&logoColor=white)](https://github.com/topics/data-science)
+[![CPU](https://img.shields.io/badge/CPU-0078D4?style=for-the-badge&logo=intel&logoColor=white)](https://github.com/topics/cpu)
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/topics/powerbi)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/topics/python)
+[![XGBoost](https://img.shields.io/badge/XGBoost-FF6F00?style=for-the-badge&logo=xgboost&logoColor=white)](https://github.com/topics/xgboost)
+[![Gradio](https://img.shields.io/badge/Gradio-FF6F00?style=for-the-badge&logo=huggingface&logoColor=white)](https://github.com/topics/gradio)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://github.com/topics/huggingface)
+[![Data Visualization](https://img.shields.io/badge/Data_Visualization-6A1B9A?style=for-the-badge&logo=databricks&logoColor=white)](https://github.com/topics/data-visualization)
+[![Predictive Analytics](https://img.shields.io/badge/Predictive_Analytics-FF5722?style=for-the-badge&logo=apachespark&logoColor=white)](https://github.com/topics/predictive-analytics)
