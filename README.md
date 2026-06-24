@@ -245,7 +245,7 @@ print(f"💰 Predicted Price: ${price:,.2f}")
 | Resource | Link |
 |----------|------|
 | **Live Application** | [Hugging Face Space](https://huggingface.co/spaces/EngReem85/cpu-price-predictor) |
-| **GitHub Repository** | [github.com/EngReem85/CPU-Advisor-predictor](https://github.com/EngReem85/CPU-Advisor-Predictor) |
+| **GitHub Repository** | [GitHub Repository](https://github.com/EngReem85/CPU-Advisor-Predictor) |
 | **Original Dataset** | [Kaggle](https://www.kaggle.com/datasets/lincolnzh/cpu-specifications-dataset) |
 | **Power BI Dashboard** | [Download .pbix](رابط-اللوحة) |
 
@@ -317,5 +317,5 @@ If you found this project useful, please give it a ⭐ on GitHub!
 ---
 
 **Tags:** `Machine Learning` `Data Science` `CPU` `Power BI` `Python` `XGBoost` `Gradio` `Hugging Face` `Data Visualization` `Predictive Analytics`
-```
+
 
